@@ -1,0 +1,46 @@
+modLoader="javafml"
+
+loaderVersion="[36,)"
+
+license="All rights reserved"
+
+issueTrackerURL="https://github.com/KingOfTheGamesYT/more-creeps-and-weirdos-reborn/issues"
+
+[[mods]]
+itemIcon="dangerzone:cake_sword"
+
+configBackground="dangerzone:textures/blocks/egg/kyuubi_egg_ore.png"
+
+modId="more_creeps_and_weirdos_reborn"
+
+version="1.0.0"
+
+displayName="More Creeps and Weirdos Reborn"
+
+displayURL="https://www.curseforge.com/minecraft/mc-mods/morecreepsandweirdosreborn"
+
+logoFile="fisher_guinea.png"
+
+credits="Thanks for this mod goes to Freakstritch for making the original mod and Shawn for making the revival"
+
+authors=["RedRoseWarrior1 aka DevMaster1015"]
+
+description='''
+This is a remake of the mod More Creeps and Weirdos
+'''
+
+# Base Forge
+[[dependencies.more_creeps_and_weirdos_reborn]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36,)"
+    ordering="NONE"
+    side="BOTH"
+
+# Base Minecraft
+[[dependencies.more_creeps_and_weirdos_reborn]]
+    modId="minecraft"
+    mandatory=true
+versionRange="[1.16.5,1.17]"
+    ordering="NONE"
+    side="BOTH"
