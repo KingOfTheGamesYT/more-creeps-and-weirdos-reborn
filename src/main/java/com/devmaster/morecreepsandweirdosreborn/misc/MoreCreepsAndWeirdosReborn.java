@@ -10,7 +10,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-@Mod("more_creeps_and_weirdos_reborn")
+@Mod(MoreCreepsAndWeirdosReborn.MOD_ID)
 public class MoreCreepsAndWeirdosReborn {
     public static final Logger LOGGER = LogManager.getLogger("More Creeps and Weirdos Reborn");
     public static final String MOD_ID = "more_creeps_and_weirdos_reborn";
