@@ -15,6 +15,6 @@ public class ItemRegistryHandler{
             DeferredRegister.create(ForgeRegistries.ITEMS, MoreCreepsAndWeirdosReborn.MOD_ID);
 
 
-public static void register(IEventBus eventBus) {
-        ITEMS.register(eventBus);
+public static void register(IEventBus modEventBus) {
+        ITEMS.register(modEventBus);
     }
