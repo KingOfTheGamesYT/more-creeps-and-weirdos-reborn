@@ -1,7 +1,12 @@
 package com.devmaster.morecreepsandweirdosreborn.misc;
 
+import com.devmaster.morecreepsandweirdosreborn.client.render.GuineaPigRender;
+import com.devmaster.morecreepsandweirdosreborn.entity.GuineaPig;
+import com.devmaster.morecreepsandweirdosreborn.util.RegistryHandler;
+import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -21,15 +26,18 @@ public class MoreCreepsAndWeirdosReborn {
         final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         modEventBus.addListener(this::setup);
 
-    //    RegistryHandler.init();
+        RegistryHandler.init();
 
         MinecraftForge.EVENT_BUS.register(this);
     }
 
     private void setup(final FMLCommonSetupEvent event) {
+        GlobalEntityTypeAttributes.put(RegistryHandler.GUINEA_PIG.get(), GuineaPig.getAttributes().create());
 
     }
     private void doClientStuff(final FMLClientSetupEvent event) {
+        RenderingRegistry.registerEntityRenderingHandler(RegistryHandler.GUINEA_PIG.get(), GuineaPigRender::new);
+
     }
 }
 

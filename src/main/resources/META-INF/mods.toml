@@ -41,6 +41,6 @@ This is a remake of the mod More Creeps and Weirdos
 [[dependencies.more_creeps_and_weirdos_reborn]]
     modId="minecraft"
     mandatory=true
-versionRange="[1.16.5,1.17]"
+    versionRange="[1.16.5,1.17]"
     ordering="NONE"
     side="BOTH"
